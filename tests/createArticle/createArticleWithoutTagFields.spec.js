@@ -26,7 +26,7 @@ test.beforeEach(async ({ page }) => {
   await homePage.assertYourFeedTabIsVisible();
 });
 
-test('Creat an article without required fields', async () => {
+test('Create an article without article tag', async () => {
   await homePage.clickNewArticleLink();
   await createArticlePage.fillArticleTitleField('Test Article Title');
   await createArticlePage.fillAboutArticleField('Test Article Description');
